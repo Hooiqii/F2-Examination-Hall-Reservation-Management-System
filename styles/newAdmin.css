@@ -1,0 +1,81 @@
+body,
+html {
+  font-family: Cambria, Georgia, serif;
+}
+
+.content-wrapper {
+  margin-left: 240px;
+  padding: 10px 20px;
+  background-color: #fff;
+  min-height: calc(100vh - 50px);
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.border-wrapper {
+  border: 1px solid #000000;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+form {
+    margin-left: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Cambria, Georgia, serif;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+    margin-top: 15px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+    color: white;
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+}
+
+.password-container {
+    position: relative; /* Set position relative */
+    width: 100%; /* Make sure it takes the full width of its container */
+}
+
+.password-container input[type="password"] {
+    padding-right: 40px; /* Add padding to the right to accommodate the icon */
+}
+
+.password-container i {
+    color: #a9a9a9;
+    position: absolute; /* Set position absolute */
+    top: 35%; /* Align vertically in the middle */
+    right: 10px; /* Align to the right side of the input container */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+    cursor: pointer;
+    z-index: 1; /* Ensure it appears above the input field */
+}

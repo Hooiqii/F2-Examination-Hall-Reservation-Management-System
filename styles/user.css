@@ -1,0 +1,224 @@
+body,
+html {
+  font-family: Cambria, Georgia, serif;
+}
+
+.content-wrapper {
+  margin-left: 240px;
+  padding: 10px 20px;
+  background-color: #fff;
+  min-height: calc(100vh - 50px);
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.border-wrapper {
+  border: 1px solid #000000;
+  padding: 20px 20px 50px 20px;
+  margin-bottom: 20px;
+}
+
+.function {
+  display: flex;
+  justify-content: space-between; /* This will position the search bar on the left and the add button on the right */
+  align-items: center; /* This will vertically center-align the items */
+  margin-bottom: 15px; /* Adjust as required */
+}
+
+#searchBar {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#searchButton {
+  padding: 8px 10px;
+  margin-left: 5px;
+  background-color: #9faab6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: Cambria, Georgia, serif;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(159, 170, 182, 0.4);
+}
+
+#searchButton:hover {
+  background-color: #9099a3;
+  color: white;
+  box-shadow: 0 6px 15px rgba(159, 170, 182, 0.4);
+}
+
+#addButton {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: Cambria, Georgia, serif;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+#addButton:hover {
+  background-color: #0056b3;
+  color: white;
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+}
+
+.table-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-list th,
+.table-list td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table-list th {
+  text-align: center;
+  background-color: #e7e7e7; /* Light gray background for headers */
+}
+
+.sortButton {
+  font-family: Cambria, Georgia, serif;
+  background: transparent; 
+  border: none;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.table-list tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternate row color for better readability */
+}
+
+.table-list tbody tr td a {
+  text-align: left;
+  color: #007bff; /* Blue color for the link */
+  text-decoration: none; /* Underline to indicate a link */
+  font-weight: 500; /* Slightly increased font weight */
+  transition: color 0.3s; /* Smooth transition effect for color change */
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.table-list tbody tr td a:hover {
+  color: #0056b3; /* Darker blue color on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+/* Responsive table design for smaller screens */
+@media screen and (max-width: 768px) {
+  .table-list {
+    overflow-x: auto; /* Horizontal scroll for smaller screens */
+  }
+}
+
+.action-btn {
+  display: flex; /* Use flexbox for positioning */
+  justify-content: center; /* Center the button horizontally */
+  align-items: center; /* Center the button vertically */
+  height: 100%; /* Ensure the button takes the full height of its container */
+}
+
+.action-btn button {
+  display: block; /* Change button to a block-level element */
+  margin: auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Cambria, Georgia, serif;
+  font-size: 14px; /* Slightly reduced font size for better fit */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+/* Green button for activation */
+.action-btn button.activate {
+  background-color: #28a745;
+  color: white;
+}
+
+.action-btn button.activate:hover {
+  background-color: #218838;
+  color: white;
+}
+
+/* Blue button for deactivation */
+.action-btn button.deactivate {
+  background-color: #007bff;
+  color: white;
+}
+
+.action-btn button.deactivate:hover {
+  background-color: #0056b3;
+  color: white;
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+}
+
+/* Disable styling for the button */
+.action-btn button[disabled] {
+  background-color: #ccc; /* Light gray background color for disabled state */
+  color: #666; /* Darker gray text color for disabled state */
+  cursor: not-allowed; /* Change cursor to not-allowed */
+  box-shadow: none; /* Remove box shadow for a flatter look */
+}
+
+/* Disable styling for the button with the deactivate class */
+.action-btn button.deactivate[disabled] {
+  background-color: #ccc; /* Light gray background color for disabled state */
+  color: #666; /* Darker gray text color for disabled state */
+  cursor: not-allowed; /* Change cursor to not-allowed */
+  box-shadow: none; /* Remove box shadow for a flatter look */
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  color: #007bff;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+  border-radius: 5px;
+}
+
+.pagination a.active {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.pagination a:disabled {
+  color: #ddd;
+  pointer-events: none;
+}

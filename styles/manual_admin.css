@@ -1,0 +1,70 @@
+body,
+html {
+  font-family: Cambria, Georgia, serif;
+}
+
+.content-wrapper {
+  margin-left: 240px;
+  padding: 10px 20px;
+  background-color: #fff;
+  min-height: calc(100vh - 50px);
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.border-wrapper {
+  border: 1px solid #000000;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.title{
+  margin-top:0;
+}
+
+/* File upload input */
+input[type="file"] {
+  margin-top: 10px;
+
+  display: block; /* Ensures file input takes full width */
+  padding: 10px; /* Add padding for better appearance */
+  border: 1px solid #ccc; /* Add border for clarity */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  background-color: #f9f9f9; /* Add background color for contrast */
+}
+
+/* File upload input hover effect */
+input[type="file"]:hover {
+  border-color: #007bff; /* Change border color on hover for emphasis */
+}
+
+/* File upload input focus effect */
+input[type="file"]:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #007bff; /* Change border color on focus for emphasis */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2); /* Add box shadow on focus for better visibility */
+}
+
+input[type="submit"] {
+  text-align:center;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: Cambria, Georgia, serif;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+  color: white;
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+}
+

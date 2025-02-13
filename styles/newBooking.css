@@ -1,0 +1,213 @@
+body,
+html {
+  font-family: Cambria, Georgia, serif;
+}
+
+.content-wrapper {
+  margin-left: 240px;
+  padding: 10px 20px;
+  background-color: #fff;
+  min-height: calc(100vh - 50px);
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.guideline-wrapper {
+  border: 1px solid #000000;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.guideline-wrapper h2 {
+  margin-top: 0;
+}
+
+.guideline-wrapper h3 {
+  text-decoration: underline;
+}
+
+.acknowledgement-content {
+  padding-left: 20px;
+}
+
+.rules-content li {
+  margin-bottom: 16px;
+}
+
+.rules-content ul ul li {
+  margin-bottom: 16px;
+}
+
+.guideline-bottom {
+  padding-top: 10px;
+}
+
+#guideline-button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: Cambria, Georgia, serif;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+  margin-top: 15px;
+}
+
+#guideline-button:hover {
+  background-color: #0056b3;
+  color: white;
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+}
+
+.bookingForm {
+  border: 1px solid #000000;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.bookingForm h2 {
+  margin-top: 0;
+}
+
+.bookingForm label {
+  margin-right: 10px; /* Add some spacing between labels and input fields */
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 5%;
+  margin-right: 30%;
+}
+
+.form-group label {
+  flex: 1; /* Takes up the available space on the right */
+  text-align: left; /* Aligns the label text to the right */
+  margin-right: 20px; /* Adds spacing between label and input/select */
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  flex: 2; /* Takes up the available space on the left */
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%; /* Calculate width minus margins for precise alignment */
+  max-width: 700px; /* Optionally, set a maximum width if you want */
+  margin-left: 20px; /* Adds a bit of margin to the left to align with label spacing */
+}
+
+.remaining-capacity {
+  display: block;
+  margin-left: 29%;
+  color: #ff0000; /* Red color to highlight the note */
+  font-size: 14px; /* Adjust font size as needed */
+  margin-top: 5px; /* Add some spacing between the input and the note */
+}
+
+.file-attachment-info {
+  margin-top: 10px;
+  color: #ff5733;
+  font-style: italic;
+  display: block;
+  margin-left: 29%;
+}
+
+#note {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#support {
+  font-style: italic;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.button-group {
+  display: flex; /* Use flexbox to align buttons */
+  justify-content: center; /* Align buttons to the left */
+  margin-bottom: 10px;
+}
+
+.button-group #back,
+.button-group input[type="reset"],
+.button-group input[type="submit"] {
+  margin-right: 20px; /* Add some spacing between buttons */
+}
+
+.button-group #back {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: Cambria, Georgia, serif;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+  margin-top: 15px;
+}
+
+.button-group #back:hover {
+  background-color: #0056b3;
+  color: white;
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+}
+
+.button-group input[type="reset"] {
+  padding: 12px 20px;
+  background-color: #ffc107;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: Cambria, Georgia, serif;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.button-group input[type="submit"] {
+  padding: 12px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: Cambria, Georgia, serif;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+  margin-top: 15px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.button-group input[type="reset"]:hover {
+  background-color: #ffa000;
+  box-shadow: 0 6px 15px rgba(255, 160, 0, 0.5);
+}
+
+.button-group input[type="submit"]:hover {
+  background-color: #218838;
+  box-shadow: 0 6px 15px rgba(33, 136, 56, 0.5);
+}
+
+.button-group #back:hover,
+.button-group input[type="reset"]:hover,
+.button-group input[type="submit"]:hover {
+  opacity: 0.9; /* Slightly reduced opacity for hover effect */
+}
+
+.disabled {
+  background-color: #f0f0f0; /* Optionally change background color or styles to indicate disabled state */
+  color: #808080; /* Optionally adjust text color */
+}

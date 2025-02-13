@@ -1,0 +1,145 @@
+body,
+html {
+  background-image: url("styleImages/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /*background-color: #f7f7f7; */
+  font-family: Cambria, Georgia, serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  margin-bottom: 60px;
+}
+
+#system {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.logo img {
+  width: 300px;
+  height: auto;
+}
+
+#loginForm {
+  max-width: 350px;
+  text-align: center;
+  margin: 40px auto 50px auto;
+  padding: 10px 40px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+#loginForm h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.input-group #userIcon {
+  position: absolute;
+  left: 25px;
+  top: 6.5%;
+  transform: translateY(-50%);
+  color: #a9a9a9;
+}
+
+.input-group #lockIcon {
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #a9a9a9;
+}
+
+.input-group input {
+  padding: 15px 50px 15px 50px;
+  width: calc(100% - 100px);
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.input-group input::placeholder {
+  color: #a9a9a9;
+}
+
+.input-group.password-group {
+  position: relative; 
+}
+
+.input-group.password-group input {
+  padding-right: 50px; 
+}
+
+.input-group.password-group #togglePassword {
+  position: absolute; 
+  right: 20px; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  cursor: pointer; 
+  color: #a9a9a9; 
+}
+
+button {
+  padding: 14px 28px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: Cambria, Georgia, serif;
+  font-size: 18px;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+  transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+}
+
+h4 {
+  font-weight: 600;
+}
+
+.loginForm-bottom {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.loginForm-bottom a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.loginForm-bottom a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+#note {
+  color: red;
+}

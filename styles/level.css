@@ -1,0 +1,176 @@
+body,
+html {
+  font-family: Cambria, Georgia, serif;
+}
+
+.content-wrapper {
+  margin-left: 240px;
+  padding: 10px 20px;
+  background-color: #fff;
+  min-height: calc(100vh - 50px);
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.border-wrapper {
+  border: 1px solid #000000;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.calendar-function {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Add some spacing below */
+}
+
+.calendar-title {
+  margin: 0; /* Reset margin */
+}
+
+.fa-angle-left,
+.fa-angle-right {
+  cursor: pointer;
+  font-size: 20px;
+  color: #6f2f27;
+}
+
+.fa-angle-left:hover,
+.fa-angle-right:hover {
+  color: #db7767; /* Change color on hover */
+}
+
+.fa-angle-left {
+  margin-right: 10px;
+}
+
+.calendar-header {
+  display: flex;
+}
+
+.calendar-day {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  background-color: #6f2f27;
+  border: 1px solid #ddd;
+  font-weight: bold;
+  color: white;
+}
+
+.calendar-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calendar-date {
+  width: calc(100% / 7); /* Each column takes up 1/7 of the available width */
+  text-align: left; /* Align text to the left */
+  padding: 0px 10px 10px 5px;
+  border: 1px solid #ddd;
+}
+
+.calendar-date span {
+  display: block;
+  padding: 5px;
+}
+
+/* Style for dates from the previous or next month */
+.calendar-date span.other-month {
+  display: block;
+  padding: 5px;
+  color: #999; /* Color for dates from previous or next month */
+}
+
+/* Add style for the current date */
+.current-date {
+  border: 1.5px solid #000000;
+  font-weight: bold;
+  /*background-color: #fffee9;  Yellow color for the current date */
+}
+
+/* Style for the "View" button */
+.view-button {
+  display: block;
+  margin-left: 108px;
+  margin-top: 80px;
+  padding: 6px 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1), 0 4px 12px rgba(0, 123, 255, 0.2);
+  font-family: Cambria, Georgia, serif;
+}
+
+.view-button:hover {
+  background-color: #218838;
+}
+
+/* Legend */
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.color-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.white-box {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.green-box {
+  background-color: #e4f5e7;
+  border: 1px solid black;
+}
+
+.red-box {
+  background-color: #f7e1e3;
+  border: 1px solid black;
+}
+
+.instruction p {
+  margin-top: 0px;
+}
+
+.no-pd-bt {
+  margin-bottom: 0px;
+}
+
+#today-button {
+  padding: 8px 10px;
+  margin-right: 5px;
+  background-color: #9099a3;
+  color: white;
+  box-shadow: 0 6px 15px rgba(159, 170, 182, 0.4);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: Cambria, Georgia, serif;
+  font-size: 16px;
+}

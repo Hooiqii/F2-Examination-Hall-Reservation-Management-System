@@ -1,0 +1,113 @@
+body,
+html {
+  font-family: Cambria, Georgia, serif;
+}
+
+.content-wrapper {
+  margin-left: 240px;
+  padding: 10px 20px;
+  background-color: #fff;
+  min-height: calc(
+    100vh - 50px
+  ); /* 100% viewport height minus header and footer heights */
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.border-wrapper {
+  border: 1px solid #000000;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+input[type="text"],
+input[type="radio"] {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+input[type="radio"] {
+  margin-right: 15px;
+}
+
+hr {
+  margin: 30px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .content-wrapper {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .far.fa-star,
+  .fas.fa-star {
+    font-size: 20px;
+  }
+}
+
+.far.fa-star,
+.fas.fa-star {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.fas.fa-star:hover,
+.far.fa-star:hover {
+  color: #f0c419; /* Lighter yellow on hover */
+}
+
+/* Styles for unchecked stars */
+.far.fa-star {
+  color: #ddd; /* Default color for unchecked stars */
+}
+
+/* Styles for checked stars */
+.fas.fa-star {
+  color: #f8ce0b; /* Yellow color for checked stars */
+}
+
+/* Additional styles for hover effect */
+.far.fa-star:hover {
+  cursor: pointer;
+}
+
+.fas.fa-star:hover {
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  text-align:center;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: Cambria, Georgia, serif;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+  margin-top: 15px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+  color: white;
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+}
