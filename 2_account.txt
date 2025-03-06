@@ -3,9 +3,7 @@
 Username: admin1
 Password: Admin@123
 
-#Additional Account
-Username: yusliza
-Password: Yusliza@123
+
 
 
 ### Admin account can be added inside the system via the http://localhost/FYP/newAdmin.php
